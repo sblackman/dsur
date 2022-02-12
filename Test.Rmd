@@ -1,0 +1,28 @@
+---
+title: "Test"
+author: "Scott Blackman"
+date: "12/02/2022"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+#options(scipen = 1, digits = 2) #set to two decimal
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, echo = TRUE)
+```
+
+```{r setoptions}
+
+```
+
+```{r get-labels, echo = FALSE}
+labs = knitr::all_labels()
+labs = setdiff(labs, c("setup", "get-labels"))
+```
+
+# Test
+
+
+# Appendix: All code for this report
+
+```{r all-code, ref.label=labs, eval=FALSE}
+```
